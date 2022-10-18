@@ -62,9 +62,6 @@ campaign as c1
 
 on c1.cf_id = b.cf_id
 where outcome = 'live'
-order by email desc
+order by b.last_name asc
 
 select * from email_backers_remaining_goal_amount
-
-
-
